@@ -1,0 +1,2 @@
+#!/bin/bash
+/opt/build-app; java -jar /opt/lc/target/link-collective-standalone.jar /opt/server_config.edn

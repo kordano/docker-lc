@@ -1,6 +1,5 @@
 FROM ubuntu:latest
 
-ADD ./opt /opt
 
 # Update the APT cache
 RUN apt-get update
@@ -21,6 +20,9 @@ RUN wget https://raw.github.com/technomancy/leiningen/stable/bin/lein -O /usr/lo
 RUN chmod +x /usr/local/bin/lein
 ENV LEIN_ROOT yes
 RUN lein
+
+# add scripts
+ADD ./opt /opt
 
 # grab project
 RUN git clone https://github.com/kordano/link-collective.git /opt/lc

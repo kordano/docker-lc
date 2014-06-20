@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 
 
 # Update the APT cache
-RUN apt-get update
+RUN apt-get   update
 
 # Install and setup project dependencies
 RUN apt-get install -y curl git wget unzip
@@ -28,10 +28,7 @@ ADD ./opt /opt
 RUN git clone https://github.com/kordano/link-collective.git /opt/lc
 
 # define port
-EXPOSE 8080
-
-# install deps locally
-RUN /opt/install-deps
+EXPOSE 8084
 
 # create uberjar with leiningen
 RUN /opt/build-app

@@ -5,7 +5,7 @@ Dockerfile for [link-collective](https://github.com/kordano/link-collective "").
 
 Build it
 ```
-[sudo] docker build --rm -t <username>/lc .
+sudo docker build --rm -t <username>/lc .
 ```
 
 A couchdb instance is required for local storage.
@@ -15,5 +15,5 @@ Fill in server configuration in `opt/server-config.edn` on the local machine whe
 
 Run it
 ```
-[sudo] docker run -d --link couchdb:db --name lc -p 8084:8084 <username>/lc
+sudo docker run -d --link couchdb:db --name lc -p 8084:8084 <username>/lc
 ```

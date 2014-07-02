@@ -26,6 +26,9 @@ ADD ./opt /opt
 # grab project
 RUN git clone https://github.com/kordano/link-collective.git /opt/lc
 
+# clone and install datascript
+RUN /opt/install-datascript
+
 # define port
 EXPOSE 8084
 

@@ -1,0 +1,2 @@
+#!/bin/bash
+git clone https://github.com/tonsky/datascript.git /opt/datascript; cd /opt/datascript; lein install

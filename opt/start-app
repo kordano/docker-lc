@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar /opt/lc/target/link-collective-standalone.jar /opt/server-config.edn
+cd /opt/topiq; lein run /opt/server-config.edn

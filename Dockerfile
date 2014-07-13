@@ -24,10 +24,7 @@ RUN lein
 ADD ./opt /opt
 
 # grab project
-RUN git clone https://github.com/kordano/link-collective.git /opt/lc
-
-# clone and install datascript
-RUN /opt/install-datascript
+RUN git clone https://github.com/kordano/topiq.git /opt/topiq
 
 # define port
 EXPOSE 8084

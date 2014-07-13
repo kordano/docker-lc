@@ -1,2 +1,2 @@
 #!/bin/bash
-cd /opt/lc; git pull;lein cljsbuild clean;lein cljsbuild once prod; lein clean; lein uberjar
+cd /opt/topiq; git pull;lein cljsbuild once prod
